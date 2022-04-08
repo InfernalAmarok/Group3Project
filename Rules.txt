@@ -1,0 +1,56 @@
+______ _   _______ _     _____ _____ _____ _______   __
+|  _  \ | | | ___ \ |   |_   _/  __ \_   _|_   _\ \ / /
+| | | | | | | |_/ / |     | | | /  \/ | |   | |  \ V / 
+| | | | | | |  __/| |     | | | |     | |   | |   \ /  
+| |/ /| |_| | |   | |_____| |_| \__/\_| |_  | |   | |  
+|___/  \___/\_|   \_____/\___/ \____/\___/  \_/   \_/ 
+
+Welcome to Project Duplicity, a Group 3 Project. This is a fantasy-themed card battler where your goal is to battle through the 
+various monsters of the lands and reach the top of Mt. Eskervon to restore peace to the world. Along the way, you will also 
+encounter helpful NPCs and rest areas to make sure your kit is well-suited to challenge any meddlesome foe that crosses your path. 
+
+TABLE OF CONTENTS:
+-BASICS 
+-ENCOUNTER TYPES
+-COMBAT SYSTEM AND UI
+-WIN AND LOSS CONDITIONS
+
+BASICS:
+
+You are a nameless adventurer, for the name is not important; what is important is your mission, which is to reach the top of Mt.
+Eskervon. To get there, however, you will have to first cross through the Cirtelgo Plains and Dalihark Pass, staving off dark 
+forces along the way. 
+
+You embark on your journey with a total of 10 magic-imbued cards that can be played to damage opponents, ward damage, or heal you,
+depending on the type. Based on what you have to deal with on your journey, you may get new cards with interesting special
+effects, and also the opportunity to upgrade your pre-existing ones, to increase their potency. 
+
+Each stage, which consists of the previously mentioned areas, has a series of stages with different encounters. 
+
+Know this: no two journeys will be exactly the same. The world may be cruel or kind to you, or somewhere in between, so your
+wits and strategies are crucial to your survival!
+
+ENCOUNTER TYPES:
+
+You will run into one of four types of encounters along the way to your final goal. These are:
+-ENEMY, where you do battle with one of several random foes. The goal here is to defeat this baddie and make it out in one piece.
+Through defeating an enemy, you'll gain access to a single card upgrade, which allows you to upgrade a non-upgraded card to its
+upgraded state, thus enhancing its power.
+-REST AREA, where you can rest to fully heal yourself, or if you're at full HP, upgrade a single card.
+-NPC, where you meet with another adventurer or other such inhabitant. They may have you solve a riddle for them, or simply ask
+for a bit of generosity. Think carefully about how you approach things, because the NPC might have something quite advantageous
+in store for you.
+-BOSS, where you duel the final foe of a given stage. Defeating the boss will allow you to move on to the next stage. 
+
+COMBAT SYSTEM AND UI:
+
+TBDL
+
+WIN AND LOSS CONDITIONS:
+
+To win the game, get through all 3 stages and beat the final boss on Mt. Eskervon. 
+
+To lose the game, you run out of HP in a given combat encounter. 
+
+Regardless of the result, you are allowed the choice to restart your adventure from scratch.
+
