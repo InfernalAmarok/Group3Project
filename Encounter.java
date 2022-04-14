@@ -16,6 +16,9 @@ public class Encounter {
         //if player has initiative
         System.out.println("You have the first move!");
 
+        //if player is hit
+        System.out.println("You are hit for [damage value] damage!");
+
         //if block value holds up
         System.out.println("Your defenses hold up against [creature name here]'s attacks!");
 
@@ -35,8 +38,17 @@ public class Encounter {
         //upgrade method call would go here
         //send player to next stage
 
+        //first to second area cutscene
+        System.out.println("Having slain Yvatra the Prowler, you realize that the source of the evil you seek to vanquish comes from somewhere far more earthen.");
+        System.out.println("After taking a rest, you embark to the next stage, Dalihark Pass, in search of more answers. There is said to be a horrid half-giant who went mad some time ago, and now obsessively collects jewels in the mineral-rich mining system of the area.");
+
+        //second to third area cutscene
+        System.out.println("You slew Sefrekis, Keeper of Jewels, but it barely brought you closer to finding the source of the evil. Then, you find a journal left by the deceased half-giant, and in amidst the incoherent scribbles, you find a depiction of a terrible mountain.");
+        System.out.println("You know full well this depicted mountain must be Mt. Eskervon, an oppressively cold and tall landform in the northern regions of the land. You have heard rumors of the place becoming host to a dark, foreign presence, but previously dismissed them.");
+        System.out.println("Now you know the rumors are true, however, and rest up for the journey that lies ahead of you.");
+
         //if win against final boss
-        System.out.println("You have claimed victory over [final boss name here]! At last, the world is at peace, at least for now.");
+        System.out.println("You have claimed victory over The Mercurial Conqueror! At last, the world is at peace, at least for now.");
         //win method call would go here
 
         //if lost
