@@ -44,7 +44,25 @@ in store for you.
 
 COMBAT SYSTEM AND UI:
 
-TBDL
+Once in a combat encounter, either you or the foe will be given the first turn in combat, determined by a random factor. After 
+that, it will the other combatant's turn, and then the turns will continue to cycle through in the order until one is victorious.
+All foes have fixed movesets that they cycle through, so you have the power of learning and free choice to counteract them. 
+When it is your turn, you can play one out of a few cards selected from your deck. At the start of the game, you are equipped
+with:
+-Strike, which deals a fixed amount of damage to a foe.
+-Defend, which gives you a fixed amount of Block. Block absorbs its value in damage before depleting, to prevent enemy attacks
+from impacting your HP.
+-Heal Wounds, which restores a fixed amount of HP.
+
+After playing a card, the other cards dealt are cycled back into the deck, while the played card is discarded. 
+The discard pile will be shuffled back into the main deck when all cards have been played. 
+
+In combat, there are various readouts in addition to your deck and HP. Combat actions of both you and the enemy are displayed, 
+along with their effects. Additionally, the fighter with priority will be shown at the start of battle, and the winner of the
+fight will be displayed at the end. 
+
+It should be noted that some enemy moves are "flavor", meaning they do nothing by themselves and are marked in quotes. However, 
+they should be noted regardless, as they may be the warning that the foe is about to hit you with something strong.
 
 WIN AND LOSS CONDITIONS:
 
