@@ -1,4 +1,3 @@
-import java.util.Random;
 public class Health {
 
     private int hitPoints;
@@ -22,5 +21,19 @@ public class Health {
         basicHealth = basicHealth + hpIncrease;
         return basicHealth;
 
+    }
+    public int getCurrentHealth()
+    {
+        return basicHealth;
+    }
+    public void die()
+    {
+        if(getCurrentHealth()<=0)
+        {
+            //run death statement
+        }
+        else{
+            System.out.print(getCurrentHealth());
+        }
     }
 }
