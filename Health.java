@@ -13,11 +13,13 @@ public class Health {
     }
     public int getHit()
     {
-        basicHealth = basicHealth -hitPoints;
+        //damaging the player through an enemy attack
+        basicHealth = basicHealth - hitPoints;
         return basicHealth;
     }
     public int heals()
     {
+        //healing the player, such as through Heal Wounds
         basicHealth = basicHealth + hpIncrease;
         return basicHealth;
 

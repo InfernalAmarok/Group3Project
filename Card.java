@@ -28,14 +28,6 @@ public class Card {
         {
             actionValue = actionValue + 5; //Initial AV would be 5
         }
-        if(cardType == "Decaying Guard")
-        {
-            actionValue = actionValue + 3; //Initial AV would be 5
-        }
-        if(cardType == "Spiked Plating")
-        {
-            actionValue = actionValue + 2; //initial AV would be 4
-        }
     }
 
     public String toString()

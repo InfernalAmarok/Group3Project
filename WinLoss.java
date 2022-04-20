@@ -1,21 +1,74 @@
-public class WinLoss {
-
-    protected boolean[] hasWon;
+import java.util.Scanner;
+import java.util.regex.Pattern;
+public class WinLoss //extends Health???
+{
+    /*
+    protected boolean hasWon;
     protected boolean[] hasLost;
 
-    public void success()
+    public static void launchGame()
     {
-        //Declares that the player is a winner and prompts them if they want to retry
-        System.out.println("The hero has prevailed at the quest set for them, despite all odds! Now with The Mercurial Conqueror slain, the world is at peace, at least for the immediate future.");
-        System.out.println("Now the hero can take a rest, until they are needed for their next grand adventure.");
-        System.out.println("That being said, you may return to try the quest again and attempt a different journey.");
-        System.out.println("Do you wish to do so? (YES / NO)");
+        Scanner kb = new Scanner(System.in);
+        String startEnd;
+        final Pattern pattern = Pattern.compile("start|end");
+
     }
 
-    public void defeat()
+     */
+
+    public static void playAgain()
     {
-        //Declares that the player has lost and prompts them if they want to retry
-        System.out.println("Alas, the hero has suffered an untimely demise- do not be disheartened.");
-        System.out.println("You may try again, but do you wish to do so? (YES / NO)");
+        Scanner kb = new Scanner(System.in);
+        String userDecision;
+        final Pattern pattern = Pattern.compile("yes|no");
+        boolean flag = true;
+        userDecision = kb.nextLine();
+        while(flag)
+        {
+            if(!pattern.matcher(userDecision).matches())
+            {
+                System.out.println("Error, please enter 'yes', or 'no' ");
+                userDecision = kb.nextLine();
+            }
+            else{
+                flag = false;
+            }
+        }
+        if (userDecision.matches("no"))
+        {
+            System.out.println("Thanks for playing!");
+            kb.close();
+            System.exit(0);
+        }
+        else{
+            kb.reset();
+
+        }
     }
+    /*
+    public static void success()
+    {
+
+        String text = """
+                The hero has prevailed at the quest set for them,
+                despite all odds! Now with The Mercurial Conqueror slain,
+                the world is at peace, at least for the immediate future.
+                Now the hero can take a rest, until they are needed for their next grand adventure.
+                That being said, you may return to try the quest again and attempt a different journey.
+                Do you wish to do so? (Y/N)
+                """;
+        System.out.print(text);
+    }
+
+    public static void defeat()
+    {
+        String text = """
+                Alas, the hero has suffered an untimely demise- do not be disheartened.
+                You may try again, but do you wish to do so? (Y/N)
+                """;
+        System.out.print(text);
+    }
+
+     */
 }
+
