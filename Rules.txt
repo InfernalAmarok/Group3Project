@@ -50,8 +50,8 @@ All foes have fixed movesets that they cycle through, so you have the power of l
 When it is your turn, you can play one out of a few cards selected from your deck. At the start of the game, you are equipped
 with:
 -Strike, which deals a fixed amount of damage to a foe.
--Defend, which gives you a fixed amount of Block. Block absorbs its value in damage before depleting, to prevent enemy attacks
-from impacting your HP.
+-Defend, which gives you a fixed amount of Block. Block reduces the damage of the incoming damage of the next attack by that
+amount, dissipating after. If your block exceeds the damage of the attack, the remainder will heal you. 
 -Heal Wounds, which restores a fixed amount of HP.
 
 After playing a card, the other cards dealt are cycled back into the deck, while the played card is discarded. 
