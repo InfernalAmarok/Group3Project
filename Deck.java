@@ -1,52 +1,49 @@
+import java.util.Random;
 public class Deck {
-    private Card[] cards;
-    private boolean[] isDealt;
-    private int cardsInDeck;
-    private int deckCapacity;
+    private int[] cards;
 
-    public Deck()
-    {
-        //Constructor for a deck of cards
-        deckCapacity = 10;
-        cards = new Card[deckCapacity]; //new Card array set to size of deck capacity
-        isDealt = new boolean[deckCapacity]; //new boolean array for establishing dealt/not dealt, set to size of deck capacity
-        cardsInDeck = 0; //starting amount of cards
+    public Deck() {
+        this.cards = new int[4];
     }
 
-    public void add(Card card)
-    {
-        //Made to add a card to the deck
-        cards[cardsInDeck++] = card;
-    }
-
-    public void deal(int index)
-    {
-        //Deals out a specific amount of cards based on how many cards are left in the deck, up to so many at a time
-        isDealt[index] = true;
-    }
-
-    public void upgrade()
-    {
-        //Upgrades a specific card and marks it as such
-    }
-
-    public void returnToDeck(int index)
-    {
-        //Return cards to deck
-        isDealt[index] = false;
-    }
-
-    public String toString()
-    {
-        //Information for the deck, to be parsed and then distributed accordingly
-
-        //Return the created deck
-        String output = ""; //sets output to blank string
-        for(int i = 0; i < cardsInDeck; i++) //for loop that outputs each card in deck and deal status
-        {
-            output += cards[i].toString() + "\n"; //card, new line after
-            output += isDealt[i] + "\n"; //deal status, new line after
+    //Populates the deck with 3 random cards
+    public int[] add() {
+        Random rand = new Random();
+        for (int i = 0; i < 5; i++) {
+            cards[rand.nextInt(3)] += 1;
         }
-        return output; //gives output
+        return cards;
+    }
+
+    public void playCard(int num) {
+        if (cards[num] > 0) {
+            cards[num] -= 1;
+        }
+    }
+
+    public boolean hasCard(int num) {
+        return cards[num] != 0;
+    }
+
+    // Empties the deck
+    public void clear() {
+        for (int i = 0; i < 4; i++) {
+            cards[i] = 0;
+        }
+    }
+
+    // Adds the easter egg card to the deck
+    public void addGodCard() {
+        cards[3] += 1;
+    }
+
+    // Prints all the cards in the deck
+    public void printCards() {
+        System.out.println("You currently have " + cards[0] + " +1 attack cards.");
+        System.out.println("You currently have " + cards[1] + " +2 attack cards.");
+        System.out.println("You currently have " + cards[2] + " +3 attack cards.");
+        if (cards[3] != 0) {
+            System.out.println("and you have the god card! (Type 4 to play it)");
+        }
     }
 }
